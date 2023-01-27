@@ -11,10 +11,10 @@
 
 import math
 number = abs(int(input('Введите число: ')))
-max = number % 10
-while (number > 0):
+max_value = number % 10
+while number > 0:
     number /= 10
-    if (max <= number % 10):
-        max = number % 10
+    if max_value <= number % 10:
+        max_value = number % 10
 
-print(math.trunc(max))
+print(math.trunc(max_value))

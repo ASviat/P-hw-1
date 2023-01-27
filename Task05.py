@@ -20,10 +20,13 @@
 gain = int(input('Введите выручку фирмы: '))
 costs = int(input('Введите издержки фирмы: '))
 
-if (gain > costs):
+if gain > costs:
     print(f'Финансовый результат - прибыль. Ее величина: {gain-costs}')
     print(f'Рентабельность выручки = {(gain-costs)/gain}')
     workers = int(input('Введите численность сотрудников фирмы: '))
     print(f'Прибыль фирмы в расчете на одного сотрудника = {(gain-costs)/workers}')
+elif gain == costs:
+    print('Работаем в ноль. Пора производить оптимизицию.')
+
 else:
     print('Василий, кина не будет.')

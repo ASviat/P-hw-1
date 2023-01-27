@@ -8,7 +8,7 @@
 # n + nn + nnn = 369
 
 number = int(input('Введите число: '))
-sum = 0
+sum_value = 0
 for i in range(3):
-    sum += number
-    print(sum, end='')
+    sum_value += number
+    print(sum_value, end='')
